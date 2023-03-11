@@ -3339,7 +3339,7 @@ class MutexLockGuard : boost::noncopyable
 
 ### vector 与 list，删除元素后指针和迭代器的变化
 
-* vector和list都是左闭又开区间 **[**begin, end**)**；
+* vector和list都是左闭右开区间 **[**begin, end**)**；
 * 删除末尾元素，返回end()位置迭代器位置；
 * 删除中间元素，返回该元素的下一个元素位置迭代器。
 
